@@ -1,24 +1,22 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    repositories {
-        google()
-        jcenter()
-        
-    }
+    apply from: 'ext.gradle'
+
+    addRepos(repositories)
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
-        
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath Deps.gradlePlugin
+        classpath Deps.kotlinGradlePlugin
+        classpath Deps.appJoint
     }
 }
 
 allprojects {
-    repositories {
-        google()
-        jcenter()
-        
+    addRepos(repositories)
+    //全局设置编码
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
     }
 }
 
