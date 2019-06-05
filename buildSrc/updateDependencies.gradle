@@ -1,11 +1,11 @@
 /**
  * 将versions.gradle/xVersion.gradle中配置的版本信息生成到src/main/groovy/Dependencies.groovy中
  * 执行该task方法：
- * 方法1(推荐)、在gradle task列表中选中buildSrc模块,点击执行gradle方法按钮,在弹窗中输入'updateDependencies'然后点击'OK';
+ * 方法1(推荐)、在gradle task列表面板点击'Run Gradle Task'按钮,在'Gradle Project'栏选中buildSrc模块,在'Command line'栏输入'updateDependencies'然后点击'OK';
  * 方法2、在Terminal输入'gradlew updateDependencies'然后执行
  */
 task("updateDependencies") {
-    String inputFilePath = "xVersions.gradle"
+    String inputFilePath = "versions.gradle"
     String outputFilePath = "src/main/groovy/Dependencies.groovy"
 
     // 将inputFilePath声明为该Task的inputs
@@ -18,8 +18,6 @@ task("updateDependencies") {
         if (!inputFile.exists()) {
             return
         }
-
-        logger.error("ing...")
 
         String inputTxt = inputFile.text
         StringBuilder builder = new StringBuilder()

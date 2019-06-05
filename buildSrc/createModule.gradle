@@ -28,7 +28,7 @@ def writeToFile = { String path, String content ->
 /**
  * 使用模板z_dir/template_module创建模块
  *
- * 执行方法1(推荐): 在gradle task列表中选中buildSrc模块,点击执行gradle方法按钮,在弹窗中输入'createModule -PmName=$mName -Pdesc=$desc', 然后点击'OK';
+ * 执行方法1(推荐): 在gradle task列表面板点击'Run Gradle Task'按钮,在'Gradle Project'栏选中buildSrc模块,在'Command line'栏输入'createModule -PmName=$mName -Pdesc=$desc', 然后点击'OK';
  * 执行方法2、在Terminal输入'gradlew createModule -PmName=$mName -Pdesc=$desc'然后执行
  */
 task("createModule") {

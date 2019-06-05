@@ -26,72 +26,69 @@ interface Deps {
     //junit
     def junit = "junit:junit:4.12"
     //runner
-    def runner = "androidx.test:runner:1.1.1"
+    def runner = "com.android.support.test:runner:1.0.2"
     //espresso
-    def espresso = "androidx.test.espresso:espresso-core:3.1.1"
+    def espresso = "com.android.support.test.espresso:espresso-core:3.0.2"
 
     /*
      * support
      */
     //appcompat
-    def appcompat = "androidx.appcompat:appcompat:1.0.2"
+    def appcompat = "com.android.support:appcompat-v7:28.0.0"
     //supportV4
-    def supportV4 = "androidx.legacy:legacy-support-v4:1.0.0"
+    def supportV4 = "com.android.support:support-v4:28.0.0"
     //supportFragment
-    def supportFragment = "androidx.fragment:fragment:1.0.0"
+    def supportFragment = "com.android.support:support-fragment:28.0.0"
     //supportCoreUtils
-    def supportCoreUtils = "androidx.legacy:legacy-support-core-utils:1.0.0"
+    def supportCoreUtils = "com.android.support:support-core-utils:28.0.0"
     //annotations
-    def annotations = "androidx.annotation:annotation:1.0.2"
+    def annotations = "com.android.support:support-annotations:28.0.0"
     //design
-    def design = "com.google.android.material:material:1.1.0-alpha06"
+    def design = "com.android.support:design:28.0.0"
     //cardView
-    def cardView = "androidx.cardview:cardview:1.0.0"
+    def cardView = "com.android.support:cardview-v7:28.0.0"
     //recyclerView
-    def recyclerView = "androidx.recyclerview:recyclerview:1.0.0"
+    def recyclerView = "com.android.support:recyclerview-v7:28.0.0"
     //transition
-    def transition = "androidx.transition:transition:1.0.1"
+    def transition = "com.android.support:transition:28.0.0"
     //constraintLayout
-    def constraintLayout = "androidx.constraintlayout:constraintlayout:1.1.3"
+    def constraintLayout = "com.android.support.constraint:constraint-layout:1.1.3"
     //multiDex
-    def multiDex = "androidx.multidex:multidex:2.0.1"
+    def multiDex = "com.android.support:multidex:1.0.3"
 
     /*
      * room
      */
     //roomRuntime
-    def roomRuntime = "androidx.room:room-runtime:2.1.0-beta01"
+    def roomRuntime = "android.arch.persistence.room:runtime:1.1.1"
     //roomCompiler
-    def roomCompiler = "androidx.room:room-compiler:2.1.0-beta01"
+    def roomCompiler = "android.arch.persistence.room:compiler:1.1.1"
     //roomRxJava2
-    def roomRxJava2 = "androidx.room:room-rxjava2:2.1.0-beta01"
+    def roomRxJava2 = "android.arch.persistence.room:rxjava2:1.1.1"
     //roomTesting
-    def roomTesting = "androidx.room:room-testing:2.1.0-beta01"
+    def roomTesting = "android.arch.persistence.room:testing:1.1.1"
 
     /*
      * lifecycle
      */
     //lifecycleExtensions : view model + live data
-    def lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:2.2.0-alpha01"
+    def lifecycleExtensions = "android.arch.lifecycle:extensions:1.1.1"
     //viewModel
-    def viewModel = "androidx.lifecycle:lifecycle-viewmodel:2.2.0-alpha01"
+    def viewModel = "android.arch.lifecycle:viewmodel:1.1.1"
     //liveData
-    def liveData = "androidx.lifecycle:lifecycle-livedata:2.2.0-alpha01"
+    def liveData = "android.arch.lifecycle:livedata:1.1.1"
     //lifecycleRuntime : no view model or live data
-    def lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime:2.2.0-alpha01"
+    def lifecycleRuntime = "android.arch.lifecycle:runtime:1.1.1"
     //lifecycleCompiler
-    def lifecycleCompiler = "androidx.lifecycle:lifecycle-compiler:2.2.0-alpha01"
+    def lifecycleCompiler = "android.arch.lifecycle:compiler:1.1.1"
     //lifecycleCommonJava8 : if using Java8, use the following instead of compiler
-    def lifecycleCommonJava8 = "androidx.lifecycle:lifecycle-common-java8:2.2.0-alpha01"
+    def lifecycleCommonJava8 = "android.arch.lifecycle:common-java8:1.1.1"
     //lifecycleReactiveStreams : ReactiveStreams support for LiveData
-    def lifecycleReactiveStreams = "androidx.lifecycle:lifecycle-reactivestreams:2.2.0-alpha01"
+    def lifecycleReactiveStreams = "android.arch.lifecycle:reactivestreams:1.1.1"
 
     /*
      * google
      */
-    //pagingRuntime
-    def pagingRuntime = "androidx.paging:paging-runtime:2.1.0"
-
     //playServicesAd
     def playServicesAd = "com.google.android.gms:play-services-ads:17.2.0"
     //googleService
@@ -100,6 +97,8 @@ interface Deps {
     def flexBox = "com.google.android:flexbox:1.1.0"
     //gson : https://github.com/google/gson
     def gson = "com.google.code.gson:gson:2.8.5"
+    //pagingRuntime
+    def pagingRuntime = "android.arch.paging:runtime:1.0.1"
 
     //kotlinStdlib
     def kotlinStdlib = "org.jetbrains.kotlin:kotlin-stdlib:1.3.31"
@@ -127,7 +126,7 @@ interface Deps {
     def okHttp3LoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:3.11.0"
 
     /*
-     * retrofi2
+     * retrofit2
      */
     //retrofit2 : https://github.com/square/retrofit
     def retrofit2 = "com.squareup.retrofit2:retrofit:2.4.0"
