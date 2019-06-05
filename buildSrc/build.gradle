@@ -1,0 +1,8 @@
+apply plugin: 'groovy'
+apply from: 'updateDependencies.gradle'
+apply from: 'createModule.gradle'
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+}
