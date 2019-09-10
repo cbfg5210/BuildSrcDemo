@@ -1,4 +1,4 @@
-applyPlugin(project, true)
+apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion Versions.compileSdk
