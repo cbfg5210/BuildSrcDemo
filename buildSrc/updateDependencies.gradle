@@ -2,8 +2,8 @@
  * 将versions.gradle/xVersion.gradle中配置的版本信息生成到src/main/groovy/Dependencies.groovy中
  * 执行该task方法：
  * 方法1:
- * AS 3.6.x:在gradle task列表面板点击'Execute Gradle Task'(类似大象的)按钮,在输入框输入'-p buildSrc updateDependencies'然后点回车键;
- * AS 3.5.x:在gradle task列表面板点击'Run Gradle Task'(类似大象的)按钮,在'Gradle Project'栏选中buildSrc模块,在'Command line'栏输入'updateDependencies'然后点击'OK';
+ * New: 在gradle task列表面板点击'Execute Gradle Task'(类似大象的)按钮,在输入框输入'-p buildSrc updateDependencies'然后点回车键;
+ * Deprecated: 在gradle task列表面板点击'Run Gradle Task'(类似大象的)按钮,在'Gradle Project'栏选中buildSrc模块,在'Command line'栏输入'updateDependencies'然后点击'OK';
  * 方法2:
  * New: 在Terminal输入'gradlew -p buildSrc updateDependencies'然后执行
  * Deprecated: 在Terminal输入'gradlew updateDependencies'然后执行
