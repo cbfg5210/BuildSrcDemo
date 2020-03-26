@@ -7,6 +7,12 @@
  * 方法2:
  * New: 在Terminal输入'gradlew -p buildSrc updateDependencies'然后执行
  * Deprecated: 在Terminal输入'gradlew updateDependencies'然后执行
+ * 方法3:
+ * AS->Edit Configurations->Gradle,点击左上角'+'添加配置:
+ * Name: $projectName:buildSrc [updateDependencies]
+ * Gradle project: $projectName/buildSrc
+ * Tasks: updateDependencies
+ * 点击'Apply'保存此配置，后续在项目的 gradle task 列表中就可以找到此 task 双击执行了
  */
 task("updateDependencies") {
     String inputFilePath = "versions.gradle"
