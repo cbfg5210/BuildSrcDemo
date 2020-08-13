@@ -13,9 +13,7 @@ dependencies {
     * 0、版本配置格式：def <name> = <value>
     * 1、配置插件/依赖库引用路径前备注格式： //<插件/依赖库名> : <备注>，这个部分会被解析确定插件/依赖库引用名称
     * 2、配置插件/依赖库引用路径时以 implementation 作为开头
-    * 3、更新配置后执行以下方法同步更新到Dependencies.kt：
-    *  方法一：在控制台执行：gradlew updateDependencies
-    *  方法二：在右侧gradle面板双击执行buildSrc/Tasks/other/updateDependencies
+    * 3、更新配置后执行 updateDependencies.gradle 的 updateDependencies task 同步更新到Dependencies.kt
     *
     *  Extra:
     *  [Google's Maven Repository] (https://dl.google.com/dl/android/maven2/index.html)
