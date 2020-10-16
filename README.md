@@ -1,5 +1,7 @@
 # BuildSrcDemo
 
+### 管理插件和依赖库信息有新的方式了喔，可以了解下：[ComposingBuildDemo](https://gitee.com/cbfg5210/ComposingBuildDemo)
+
 初识 buildSrc 是在[掘金](https://juejin.im/)的一篇文章中：[[译]Kotlin + buildSrc：更好的管理Gadle依赖](https://juejin.im/post/5b0fb0e56fb9a00a012b7fda)。
 
 从此就一直使用 buildSrc 来管理插件和依赖库信息了，并且介绍给团队之后团队也是采用了这种方法。但是随着 kotlin 的升级，不记得是在哪个版本的时候发现 Sync 的时候有问题，需要修改 buildSrc 中的 kotlin 脚本配置才行，于是考虑把 kotlin 换成了 groovy，这样 kotlin 的升级就不会影响到 buildSrc 了。
